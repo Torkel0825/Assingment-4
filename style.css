@@ -1,0 +1,49 @@
+* {
+  margin: auto;
+  display: border-box;
+  scroll-behavior: smooth;
+}
+
+#realHeading {
+  position: fixed;
+
+  max-width: 1980px;
+  width: 1980px;
+  padding: 15px 0px;
+}
+
+.border {
+  border: 1px dotted blue;
+}
+
+.main_body {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-direction: row;
+  width: cover;
+  height: auto;
+}
+
+.box {
+  height: 160px;
+  width: 200px;
+
+  margin: 50px;
+
+  /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.divx {
+  height: 300px;
+  width: fit-content;
+  margin-top: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
