@@ -7,23 +7,35 @@
     <link rel="stylesheet" href="style.css" />
     <title>JavaScript Assn</title>
   </head>
+  <!-- Can be used as a template for a homepage/many/portfolio -->
+  <!-- Sort of like a homescreen -->
   <body>
     <header>
       <h1>Coding</h1>
       <p>Just open the console.. nothing exiting going on here, promise!</p>
     </header>
+    <!-- Everything above is the header. -->
+    <!-- The first section contains the first main section. -->
     <section id="main_body" class="border">
       <section id="realHeading" class="border">
         <h1>Box Heading 1</h1>
-        <a href="#"><img class="heading_logo" src="" alt="Heading logo" /></a>
+        <a href="#">
+          <img class="heading_logo" src="" alt="Heading logo" />
+        </a>
       </section>
+      <!-- Contains the first section that has the different option buttons inside.  -->
       <section class="box divx border">
-        <div class="box border" class="styleChangeMeny"></div>
-        <div class="box border" class="calculatorMeny"></div>
-        <div class="box border" class="rockPaperScissorsMeny"></div>
-        <div class="box border" class="randomWordMeny"></div>
-        <div class="box border"></div>
-        <div class="box border"></div>
+        <div class="box border flexboxMiddle" class="styleChangeMeny"></div>
+        <div class="box border flexboxMiddle" class="calculatorMeny">
+          <button id="calc">Calculator</button>
+        </div>
+        <div
+          class="box border flexboxMiddle"
+          class="rockPaperScissorsMeny"
+        ></div>
+        <div class="box border flexboxMiddle" class="randomWordMeny"></div>
+        <div class="box border flexboxMiddle"></div>
+        <div class="box border flexboxMiddle"></div>
       </section>
     </section>
     <section class="box border"></section>

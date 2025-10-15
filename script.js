@@ -16,3 +16,4 @@ have them appear in different boxes(div) on the page, but have them hidden initi
     
 
 */
+let numberOne = document.querySelector("");

@@ -49,3 +49,21 @@
   justify-content: left;
   align-items: center;
 }
+
+button {
+  background-color: goldenrod;
+  color: #1c3144;
+  font: 20px bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+}
+
+.flexboxMiddle {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  flex-direction: row;
+}
