@@ -19,12 +19,15 @@ have them appear in different boxes(div) on the page, but have them hidden initi
 const calcBtn = document.getElementById("calculate");
 const modalBox = document.getElementById("myModal");
 const modalClose = document.getElementById("close");
-
+const num1 = document.getElementById("nubmber1");
+const num2 = document.getElementById("nubmber2");
 //
 
 function calculate() {
+  document.querySelector("#model-content").style.display = "block";
   //
 }
+calcBtn.addEventListener("click", () => calculate());
 
 function addition(a, b) {
   return (result = a + b);
@@ -37,11 +40,4 @@ function multiplication(a, b) {
 }
 function division(a, b) {
   return (result = a / b);
-}
-calcBtn.addEventListener("dblclick", showModal());
-
-function showModal() {
-  modalBox.style.display = "block";
-
-  console.log("click");
 }
