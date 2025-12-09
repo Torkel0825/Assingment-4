@@ -26,14 +26,15 @@ const num2 = document.getElementById("nubmber2");
 function viewCalculator() {
   document.querySelector("#model-content").style.display = "block";
   calcBtn.innerHTML = " ";
-  document.querySelector("calcBtn").style.visibility = "hidden";
+  document.querySelector(calcBtn).style.display = "hidden";
   // the hover effect on the button remains even when i have hidden the button upon it being pressed
   //
 }
-calcBtn.addEventListener("click", () => viewCalculator());
+calcBtn.addEventListener("click", viewCalculator);
 
 function addition(num1, num2) {
-  return (result = a + b);
+  result = num1 + num2;
+  return result;
 }
 function substitution(num1, num2) {
   return (result = a - b);

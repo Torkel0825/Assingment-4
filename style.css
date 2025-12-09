@@ -69,11 +69,16 @@ button {
   border-radius: 0.2rem;
   border: none;
   padding: 0.8rem;
+  display: block;
 }
 
 #calculate:hover {
   background-color: orange;
   cursor: pointer;
+}
+div > button {
+  align-self: center;
+  justify-self: center;
 }
 
 #model-content {
