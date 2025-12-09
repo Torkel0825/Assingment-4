@@ -15,16 +15,21 @@
 
     <section>
       <section id="c2">
-        <button id="calculate">Calculator</button>
+        <span id="close">&times;</span>
+        <div>
+          <button id="calculate">Calculator</button>
+          <!-- i don't know how to make the X seamlessly fit with the background :( -->
+        </div>
         <section id="myModal" class="modal">
           <div id="model-content">
+            <input type="text" value="" />
             <form>
               <button id="add"></button>
               <button id="sub"></button>
               <button id="mult"></button>
               <button id="divi"></button>
             </form>
-            <span id="close">&times;</span>
+            <!-- the weird text here === the x character, often used for as a visual for closing windows  -->
           </div>
         </section>
       </section>
