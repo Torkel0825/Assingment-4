@@ -23,21 +23,24 @@ const num1 = document.getElementById("nubmber1");
 const num2 = document.getElementById("nubmber2");
 //
 
-function calculate() {
+function viewCalculator() {
   document.querySelector("#model-content").style.display = "block";
+  calcBtn.innerHTML = " ";
+  document.querySelector("calcBtn").style.visibility = "hidden";
+  // the hover effect on the button remains even when i have hidden the button upon it being pressed
   //
 }
-calcBtn.addEventListener("click", () => calculate());
+calcBtn.addEventListener("click", () => viewCalculator());
 
-function addition(a, b) {
+function addition(num1, num2) {
   return (result = a + b);
 }
-function substitution(a, b) {
+function substitution(num1, num2) {
   return (result = a - b);
 }
-function multiplication(a, b) {
+function multiplication(num1, num2) {
   return (result = a * b);
 }
-function division(a, b) {
+function division(num1, num2) {
   return (result = a / b);
 }

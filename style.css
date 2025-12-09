@@ -15,10 +15,22 @@ body {
   justify-content: center;
   /* align-items: start; */
   flex-direction: column;
-  width: cover;
+
   height: auto;
 
   gap: 6rem;
+}
+/* copied the styles from a default react project */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
 /*! currently doesn't work, don't know why. The .modal under makes the entire page "break"*/
@@ -40,6 +52,10 @@ body {
   border: none;
   padding: 1rem;
   background-color: goldenrod;
+  /* max-width: 10rem; */
+}
+#c2 {
+  max-width: 15rem;
 }
 
 #calculate {
@@ -66,6 +82,9 @@ body {
 
 /* the close button on the modal */
 #close {
+  /* position: absolute; */
+  top: 10px;
+  right: 15px;
   color: white;
   float: right;
   font-size: 1.2rem;
