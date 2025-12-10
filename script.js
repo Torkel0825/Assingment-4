@@ -16,20 +16,20 @@ have them appear in different boxes(div) on the page, but have them hidden initi
     
 
 */
-// const calcBtn = document.getElementById("calculate");
+const calcBtn = document.getElementById("calculate");
 // const modalBox = document.getElementById("myModal");
 // const modalClose = document.getElementById("close");
 // const result = document.getElementById("number");
 // //
 
-// function viewCalculator() {
-//   document.querySelector("#model-content").style.display = "block";
-//   calcBtn.innerHTML = " ";
-//   document.querySelector(calcBtn).style.display = "hidden";
-//   // the hover effect on the button remains even when i have hidden the button upon it being pressed
-//   //
-// }
-// calcBtn.addEventListener("click", viewCalculator);
+function viewCalculator() {
+  document.querySelector("#model-content").style.display = "block";
+  calcBtn.innerHTML = " ";
+  document.querySelector(calcBtn).style.display = "hidden";
+  // the hover effect on the button remains even when i have hidden the button upon it being pressed
+  //
+}
+calcBtn.addEventListener("click", viewCalculator);
 
 // function addition(num1, num2) {
 //   result = num1 + num2;
@@ -99,7 +99,7 @@ function calculate() {
   currentInput = result.toString();
   currentOperation = "";
   previousInput = "";
-  document.getElementById("display").value = currentInput;
+  document.getElementById("mummiNum").value = currentInput;
 }
 
 function clearDisplay() {
@@ -107,4 +107,5 @@ function clearDisplay() {
   previousInput = "";
   currentOperation = "";
   document.getElementById("display").value = "";
+  document.getElementById("mummiNum").value = "";
 }
