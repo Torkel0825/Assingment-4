@@ -16,31 +16,44 @@ have them appear in different boxes(div) on the page, but have them hidden initi
     
 
 */
-const calcBtn = document.getElementById("calculate");
-const modalBox = document.getElementById("myModal");
-const modalClose = document.getElementById("close");
-const result = document.getElementById("number");
-//
+// const calcBtn = document.getElementById("calculate");
+// const modalBox = document.getElementById("myModal");
+// const modalClose = document.getElementById("close");
+// const result = document.getElementById("number");
+// //
 
-function viewCalculator() {
-  document.querySelector("#model-content").style.display = "block";
-  calcBtn.innerHTML = " ";
-  document.querySelector(calcBtn).style.display = "hidden";
-  // the hover effect on the button remains even when i have hidden the button upon it being pressed
-  //
-}
-calcBtn.addEventListener("click", viewCalculator);
+// function viewCalculator() {
+//   document.querySelector("#model-content").style.display = "block";
+//   calcBtn.innerHTML = " ";
+//   document.querySelector(calcBtn).style.display = "hidden";
+//   // the hover effect on the button remains even when i have hidden the button upon it being pressed
+//   //
+// }
+// calcBtn.addEventListener("click", viewCalculator);
 
-function addition(num1, num2) {
-  result = num1 + num2;
-  return result;
+// function addition(num1, num2) {
+//   result = num1 + num2;
+//   return result;
+// }
+// function substitution(num1, num2) {
+//   return (result = a - b);
+// }
+// function multiplication(num1, num2) {
+//   return (result = a * b);
+// }
+// function division(num1, num2) {
+//   return (result = a / b);
+// }
+
+let currentInput = "";
+let currentOperation = "";
+let previousInput = "";
+
+function appendNumber(number) {
+  currentInput += number;
+  document.getElementById(
+    "display"
+  ).value = `${previousInput} ${currentOperation} ${currentInput}`;
 }
-function substitution(num1, num2) {
-  return (result = a - b);
-}
-function multiplication(num1, num2) {
-  return (result = a * b);
-}
-function division(num1, num2) {
-  return (result = a / b);
-}
+
+// function
