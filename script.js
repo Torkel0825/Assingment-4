@@ -95,4 +95,16 @@ function calculate() {
     default:
       return;
   }
+
+  currentInput = result.toString();
+  currentOperation = "";
+  previousInput = "";
+  document.getElementById("display").value = currentInput;
+}
+
+function clearDisplay() {
+  currentInput = "";
+  previousInput = "";
+  currentOperation = "";
+  document.getElementById("display").value = "";
 }
