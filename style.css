@@ -44,7 +44,7 @@ button {
   width: 80%;
   height: 80%;
   overflow: auto; // Enable scroll if needed 
-} */
+  } */
 
 /* main button */
 #c2 > div {
@@ -79,6 +79,16 @@ button {
 div > button {
   align-self: center;
   justify-self: center;
+}
+
+#number {
+  border-radius: 4%;
+  background-color: grey;
+
+  width: auto;
+  height: 1.3rem;
+  padding: 0.6em 1.2em;
+  margin: 1rem -2rem;
 }
 
 #model-content {

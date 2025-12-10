@@ -19,8 +19,7 @@ have them appear in different boxes(div) on the page, but have them hidden initi
 const calcBtn = document.getElementById("calculate");
 const modalBox = document.getElementById("myModal");
 const modalClose = document.getElementById("close");
-const num1 = document.getElementById("nubmber1");
-const num2 = document.getElementById("nubmber2");
+const result = document.getElementById("number");
 //
 
 function viewCalculator() {
